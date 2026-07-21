@@ -1,0 +1,25 @@
+# SEDE-foundations — reproduction dependencies
+#
+# Tested/working stack (CI-verified): Python 3.12, numpy 2.2.6, scipy 1.13.1,
+# camb 1.6.6, matplotlib 3.x, astropy, emcee, corner, colossus.
+#
+# IMPORTANT version constraint (the pipeline does NOT run outside it):
+#   * numpy <  2.3 — NumPy 2.3 made float(size-1 array) a hard error, which trips
+#                    camb 1.6.6's BBN predictor in set_cosmology (TypeError).
+#   * scipy <  1.14 — for compatibility with the pinned numpy.
+# (The np.trapezoid/np.trapz rename is handled in-code by a getattr shim, so the
+#  numeric integrals run on any NumPy; only the camb constraint above remains.)
+numpy<2.3
+scipy<1.14
+matplotlib
+astropy
+camb            # Boltzmann/background code (CAMB)
+emcee           # affine-invariant MCMC (run_barrow_mcmc, calibration)
+corner          # posterior corner plots
+colossus        # halo-model / mass-function utilities (gamma_computation)
+
+# Optional — only needed for specific opt-in stages; install if you run them:
+# classy                 # CLASS python wrapper  -> run_xval_class, run_class_perturbations
+# cobaya                 # Planck plik_lite      -> run_plik_check, run_full_cmb_mcmc, run_joint_fullcmb
+# dynesty                # nested-sampling evidence -> run_bayesian_evidence, run_no_shoes_robustness
+# act_dr6_lenslike       # ACT DR6 CMB lensing   -> run_act_lensing (needs ~344MB external data)

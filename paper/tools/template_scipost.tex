@@ -1,0 +1,120 @@
+% Pandoc template for SciPost Physics (SciPost.cls). Engine: pdflatex (mathdesign).
+% SciPost.cls already loads geometry, inputenc(utf8), amsmath, hyperref, graphicx, cite,
+% caption, xcolor — so we add only the pandoc-body + prose-Unicode machinery on top.
+\documentclass[submission, Phys]{SciPost}
+
+\usepackage{orcidlink}
+\usepackage{amssymb}   % \Box, \square, \lesssim, \gtrsim … (SciPost.cls omits it; add explicitly)
+
+% --- prose Unicode operators -> math (pdflatex-safe via newunicodechar) ---
+\usepackage{newunicodechar}
+% Unicode sub/superscripts that reach LaTeX unwrapped (mdmath handles the in-run ones)
+\newunicodechar{₀}{\ensuremath{{}_0}}\newunicodechar{₁}{\ensuremath{{}_1}}
+\newunicodechar{₂}{\ensuremath{{}_2}}\newunicodechar{₃}{\ensuremath{{}_3}}
+\newunicodechar{₄}{\ensuremath{{}_4}}\newunicodechar{₅}{\ensuremath{{}_5}}
+\newunicodechar{₆}{\ensuremath{{}_6}}\newunicodechar{₇}{\ensuremath{{}_7}}
+\newunicodechar{₈}{\ensuremath{{}_8}}\newunicodechar{₉}{\ensuremath{{}_9}}
+\newunicodechar{₊}{\ensuremath{{}_+}}\newunicodechar{₋}{\ensuremath{{}_-}}
+\newunicodechar{⁰}{\ensuremath{{}^0}}\newunicodechar{¹}{\ensuremath{{}^1}}
+\newunicodechar{²}{\ensuremath{{}^2}}\newunicodechar{³}{\ensuremath{{}^3}}
+\newunicodechar{⁴}{\ensuremath{{}^4}}\newunicodechar{⁵}{\ensuremath{{}^5}}
+\newunicodechar{⁶}{\ensuremath{{}^6}}\newunicodechar{⁷}{\ensuremath{{}^7}}
+\newunicodechar{⁸}{\ensuremath{{}^8}}\newunicodechar{⁹}{\ensuremath{{}^9}}
+\newunicodechar{⁺}{\ensuremath{{}^+}}\newunicodechar{⁻}{\ensuremath{{}^-}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{∂}{\ensuremath{\partial}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∎}{\ensuremath{\blacksquare}}
+\newunicodechar{□}{\ensuremath{\Box}}
+\newunicodechar{∝}{\ensuremath{\propto}}
+\newunicodechar{∞}{\ensuremath{\infty}}
+\newunicodechar{∫}{\ensuremath{\int}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{≡}{\ensuremath{\equiv}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≪}{\ensuremath{\ll}}
+\newunicodechar{≫}{\ensuremath{\gg}}
+\newunicodechar{≲}{\ensuremath{\lesssim}}
+\newunicodechar{≳}{\ensuremath{\gtrsim}}
+\newunicodechar{⊙}{\ensuremath{\odot}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\newunicodechar{⟹}{\ensuremath{\Longrightarrow}}
+\newunicodechar{⟺}{\ensuremath{\Longleftrightarrow}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+\newunicodechar{𝓗}{\ensuremath{\mathcal{H}}}
+\newunicodechar{√}{\ensuremath{\surd}}
+\newunicodechar{∼}{\ensuremath{\sim}}
+\newunicodechar{∇}{\ensuremath{\nabla}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{⟨}{\ensuremath{\langle}}
+\newunicodechar{⟩}{\ensuremath{\rangle}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{ℓ}{\ensuremath{\ell}}
+\newunicodechar{ħ}{\ensuremath{\hbar}}
+\newunicodechar{′}{\ensuremath{{}^\prime}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{±}{\ensuremath{\pm}}
+
+% --- pandoc body requirements ---
+\usepackage{longtable,booktabs,array}
+\usepackage{calc}
+\usepackage{float}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{%
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi%
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+\makeatother
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\graphicspath{{../}{../figures/}{../../results/}{../../results/paper/}}
+\setlength{\emergencystretch}{3em}
+
+\begin{document}
+
+\begin{center}{\Large \textbf{$title$}}\end{center}
+
+\begin{center}
+Stilian Pandev\textsuperscript{$$\star$$}\,\orcidlink{0009-0005-8153-071X}
+\end{center}
+
+\begin{center}
+{\bf 1} Independent researcher
+\\[2pt]
+$${}^\star$$ {\small \sf stilianpandev@gmail.com}
+\end{center}
+
+\begin{center}
+$date$
+\end{center}
+
+\section*{Abstract}
+{\bf
+$abstract$
+}
+$if(keywords)$
+
+\vspace{6pt}
+\noindent\textbf{Keywords:} $keywords$
+$endif$
+
+\vspace{10pt}
+\noindent\rule{\textwidth}{1pt}
+\tableofcontents\thispagestyle{fancy}
+\noindent\rule{\textwidth}{1pt}
+\vspace{10pt}
+
+$body$
+
+\bibliographystyle{SciPost_bibstyle}
+\bibliography{refs}
+\end{document}

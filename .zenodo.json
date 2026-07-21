@@ -1,0 +1,25 @@
+{
+  "title": "Is the volume-law horizon a postulate or a consequence? A reduction to a driven non-equilibrium conjecture for Structural Entropy Dark Energy",
+  "description": "Reproducibility code and data for the SEDE foundations paper, which asks how much of the volume-law (Barrow Δ=1) horizon-entropy postulate of Structural Entropy Dark Energy is irreducible, reducing it to a driven non-equilibrium conjecture.",
+  "creators": [
+    {
+      "name": "Pandev, Stilian",
+      "orcid": "0009-0005-8153-071X",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "upload_type": "software",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "horizon thermodynamics",
+    "generalised entropy",
+    "Barrow entropy",
+    "holographic dark energy",
+    "de Sitter holography",
+    "entanglement entropy",
+    "non-equilibrium statistical mechanics",
+    "entropic gravity",
+    "dark energy"
+  ]
+}
