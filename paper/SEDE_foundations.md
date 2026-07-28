@@ -23,8 +23,13 @@ clears the ordering threshold only with a size-dependent ratio, the two-phase fr
 at the horizon's birth; grown continuously from Planckian size, the horizon passes *through* the ordering
 bifurcation with Barrow entropy tilting the nascent well toward volume, so Δ = 1 is *favoured* at birth,
 and long-range hysteresis locks each horizon to its birth branch — the cosmic horizon to volume, an
-abruptly-formed black hole to area. We are explicit about the limits of this argument: the tie-breaking
-tilt is itself the Barrow-Δ = 1 free energy, the two-well landscape presupposes an accessible volume
+abruptly-formed black hole to area. We are explicit about the limits of this argument. The entropic
+drive is a variational statement *within* the assumed Barrow family — dF/dΔ = −T·S_Δ·½·ln(A/A₀) < 0 at
+every Δ for any horizon above Planck area — and is near-tautological there, so the load is carried not
+by the tilt but by two independent inputs: the capacity ceiling Δ ≤ 1, proved in the companion count
+paper with no thermodynamic input, and gravity's cooperativity, which supplies the bistability that
+makes the outcome a *locked branch* rather than a tunable value. What remains genuinely conditional is
+that the two-well landscape presupposes an accessible volume
 phase, the mean-field treatment is extrapolated to the N ∼ O(1) quantum-gravity regime where its tools
 are not controlled, and the one concrete model of de Sitter holography (double-scaled SYK) currently
 maps to the *area* branch — so the mechanism relocates and narrows the postulate, it does not eliminate
@@ -309,9 +314,44 @@ deposits *populate* the volume capacity, not that they select the branch.
 We ask what selects the volume branch dynamically, separating what is robust from what is conditional.
 Four results, each backed by an explicit calculation.
 
+**The shape of the argument, stated first.** Because a selection argument for Δ = 1 that used Δ = 1's
+own free energy would be circular, we set out the logical structure before the details, and note which
+input carries which part of the load.
+
+1. **A drive**, from thermodynamics. Within the Barrow family, F(Δ) = E − T_AH S_Δ satisfies
+ dF/dΔ = −T_AH S_Δ·½·ln(A/A₀) < 0 at *every* Δ, for any horizon larger than a Planck area. This is a
+ derivative *across* the family, not an evaluation at its endpoint — but it is also close to
+ tautological, since S_Δ is constructed to increase with Δ when A > A₀. The drive establishes a
+ direction and nothing more.
+2. **A ceiling**, from counting. Δ ≤ 1 is a theorem of the companion count paper
+ [@Pandev:2026count], proved from a finite per-site leg budget with no thermodynamic input and no
+ reference to this argument. It is the ceiling, not the drive, that supplies the *value*.
+3. **Discreteness**, from gravity. Cooperativity J = λ_max(W_grav) ≫ J_c makes the landscape bistable
+ with a barrier ∼N·T_AH, so the outcome is a *locked branch* — area or volume — rather than a
+ continuously tunable exponent. This is why no intermediate Δ is available to be fitted.
+4. **A branch, from history.** Which of the two locked branches a given horizon occupies is set at its
+ birth and held by long-range hysteresis: continuous growth through the ordering bifurcation selects
+ volume; abrupt formation traps the area branch. This is what makes the black hole's Δ_BH = 0 a
+ prediction rather than an accommodation.
+
+No step assumes its conclusion: the direction comes from thermodynamics, the value from an
+independently-proved combinatorial ceiling, the discreteness from gravitational cooperativity, and the
+branch from formation history. The load-bearing *physical* claim is (4) — that formation history
+selects the branch — and that is where this argument should be attacked, not at the tilt.
+
 (i) Barrow entropy supplies a driving slope, not a landscape. The bare Barrow free energy
-F(Δ) = E − T_AH S_Δ, with S_Δ = (A/A₀)^{1+Δ/2} and the Misner–Sharp energy, is *monotonic* in Δ —
-F(0) = 0 by the first law, and F decreases to Δ = 1 with no barrier and no second minimum. Bistability
+F(Δ) = E − T_AH S_Δ, with S_Δ = (A/A₀)^{1+Δ/2} and the Misner–Sharp energy, is *monotonic* in Δ:
+differentiating across the family at fixed horizon data,
+$$\frac{dF}{d\Delta} \;=\; -\,T_{\rm AH}\,S_\Delta\,\tfrac{1}{2}\ln\!\frac{A}{A_0} \;<\; 0
+\qquad\text{for every }\Delta,\ \text{whenever } A > A_0,$$
+so F(0) = 0 by the first law and F decreases to Δ = 1 with no barrier and no second minimum. Two
+readings must be kept apart. The derivative is evaluated at *every* member of the family, so the
+statement is a property of F(·) over Δ ∈ [0,1] and not an evaluation of F at the endpoint — the drive
+does not presuppose the branch it favours. But neither is it deep: S_Δ is constructed to increase with
+Δ for A > A₀, so "the free energy prefers larger Δ" is close to a restatement of that construction.
+The drive therefore fixes a *direction* only; the *value* Δ = 1 comes from the independently-proved
+ceiling of the count paper (preamble, item 2), and the fact that the outcome is a discrete branch
+rather than a tunable exponent comes from gravity (item 3). Bistability
 is therefore not a consequence of Barrow entropy: Barrow supplies the entropic drive toward Δ = 1,
 not the two-phase structure. (This is the actual content of the GSL argument of §8.1 — it drives
 Δ → 1, it does not by itself produce a spinodal.)
