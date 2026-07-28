@@ -29,12 +29,14 @@ phase, the mean-field treatment is extrapolated to the N ∼ O(1) quantum-gravit
 are not controlled, and the one concrete model of de Sitter holography (double-scaled SYK) currently
 maps to the *area* branch — so the mechanism relocates and narrows the postulate, it does not eliminate
 it. Its lasting value is to convert an untestable counting postulate into a falsifiable one: a
-pre-registered point prediction Δ = 1, tested to a forecast σ(Δ) ≈ 0.09 by DESI DR3 + Euclid. On public data the contrast is already sharp — in a *profile*-likelihood analysis (the marginalised
-posterior awaits DR3+Euclid) the structure-gated family *prefers* the
-volume endpoint (Δ = 0.93 [0.83, 1.02]) that the un-gated Barrow family pays Δχ² ≈ 2400 to reach.
-The marginalised model-level statement is more modest: at equal parameter count the zero-parameter Δ = 1
-model is favoured over ΛCDM at the cosmology paper's ΔDIC ≈ −3 (a point-fit gives Δχ² ≈ 2.9, but the
-DIC is the honest headline). The
+pre-registered point prediction Δ = 1, tested to a forecast σ(Δ) ≈ 0.09 by DESI DR3 + Euclid. On public
+data the model-level statement is modest and is the one we lead with: at equal parameter count the
+zero-parameter Δ = 1 model is favoured over ΛCDM at the cosmology paper's ΔDIC ≈ −3 — a
+mild-to-moderate preference, not a detection. Underneath it, a *profile*-likelihood diagnostic (the
+marginalised posterior awaits DR3 + Euclid) shows the structure-gated family sitting at the volume
+endpoint, Δ = 0.93 [0.83, 1.02], which the un-gated Barrow family pays Δχ² ≈ 2400 to reach; profile
+statements of this kind overstate the marginalised signal by ∼two orders of magnitude in χ² and are
+reported as diagnostics, not exclusions. The
 cosmological results of the cosmology paper stand independently of the reduction attempted here.
 
 **Keywords —** horizon thermodynamics; generalised entropy; Barrow entropy; holographic dark energy; de Sitter holography; entanglement entropy; non-equilibrium statistical mechanics; entropic gravity; dark energy.
@@ -353,7 +355,23 @@ spinodal. *(c)* The cooperative coupling J = λ_max(W_grav) is the gravitational
 all-to-all (volume-law) connectivity gives χ_peak ∝ √N (so J/J_c ∼ N, far above threshold), while local
 (area-law) connectivity is bounded. Gravity thus makes the well bistable — but *deeply* so today, which
 is why selection happens at the birth bifurcation (result iii, Fig. 4) rather than by barrier crossing
-(the horizon's membrane hydrodynamics, result iv, is a separate matter).
+(the horizon's membrane hydrodynamics, result iv, is a separate matter). *The landscape variable here is
+the order parameter m of (ii) — the fraction of horizon bonds on the bulk side of the min-cut — and
+not the cosmological gate f_sat; the two are distinct coordinates and must not be read against each
+other (see the caution below).*
+
+**The order parameter is not the gate.** Because panel *(a)* is labelled by the bare gate, the landscape
+invites a reading in which f_sat is the order parameter of the double well. It is not, and the
+distinction matters for what §5 does and does not claim. The order parameter m is a *free-energy*
+coordinate: it relaxes by gradient flow, ∂_τ m = −Γ F′(m), a branch-*selecting* dynamics fixed by the
+shape of F and driven by the pitchfork at the horizon's birth. The gate f_sat is a *cumulative*
+coordinate obeying activation kinetics ∂_x f = γ(1 − f), whose rate vanishes as f → 1 — a monotone
+filling that can never overshoot and that crosses no barrier. A variable whose own equation of motion
+switches off at the endpoint it approaches cannot be the order parameter of a bistable potential. The
+division of labour is therefore clean, and is what §5 asserts: the *branch* — which well the horizon
+sits in — is fixed once, at birth, by m (result iii); f_sat is the subsequent *occupancy* of the
+already-selected volume capacity, not a second branch selector. Nothing in the selection argument
+depends on the gate, and no critical behaviour in f_sat is claimed (§6).
 
 (iii) Selection at the ordering bifurcation, and exact hysteresis. A barrier ∼ N·T_AH is *uncrossable*: Kramers escape is suppressed
 by e^{−N·Δf}, N ∼ 10¹²² — so "relaxation to the global minimum" cannot be the selection mechanism,
@@ -487,10 +505,25 @@ pre-registered point Δ = 1 establishes, Δ = 0 refutes, an intermediate value f
 locked-Δ picture — decisive, in hand; the predictions are frozen with an amendment protocol in
 the pre-registration).
 
-Level 3 already has a present-data instalment. On DESI DR2 BAO + Pantheon+ + CMB distance priors + cosmic chronometers + fσ8, in one CAMB-in-the-loop pipeline, the un-gated Hubble-cutoff Barrow family pays Δχ² = +2416 to sit at Δ = 1 — reproducing, in this related family, the community result that bare Barrow HDE cannot live at the volume endpoint [@Luciano:2025elo]. The gated family, by contrast, pays only Δχ² = +0.8, with a profile-likelihood interval Δ = 0.93, 68% CL [0.83, 1.02] (all base parameters re-optimised at each Δ — a profile, *not* the full marginalised posterior, which remains the DR3 + Euclid target; the label is precise because the cosmology paper (§5.6) [@Pandev:2026cosmology] reserves "marginalised measurement" for that future). The pre-registered window lies inside the interval, and Δ = 0 is excluded by Δχ² ≈ 371 — a *profile* statement: read as such, it overstates the marginalised model-level signal (the cosmology paper's ΔDIC ≈ −3) by roughly two orders of magnitude in χ², and must not be quoted as a posterior exclusion. SEDE at Δ = 1, carrying zero dark-sector parameters, fits these data
-2.9 χ²-units *better* than ΛCDM at equal parameter count, and within 1.4 AIC-units of w0waCDM,
-which spends two extra parameters. The structure gate is, quantitatively, what makes the
-volume-law count observationally viable — on data already public.
+Level 3 already has a present-data instalment, and we state the model-level result first because it is
+the one that carries evidential weight. On DESI DR2 BAO + Pantheon+ + CMB distance priors + cosmic
+chronometers + fσ8, in one CAMB-in-the-loop pipeline, SEDE at Δ = 1 — carrying *zero* dark-sector
+parameters — is favoured over ΛCDM at **ΔDIC ≈ −3** (the cosmology paper's headline
+[@Pandev:2026cosmology]), fits 2.9 χ²-units better at equal parameter count, and sits within 1.4
+AIC-units of w0waCDM, which spends two extra parameters. That is a mild-to-moderate preference, not a
+detection, and it is the honest summary of what present data say about the model.
+
+Two *diagnostic* profile-likelihood statements sit underneath it, and must not be read as posterior
+measurements. First, the un-gated Hubble-cutoff Barrow family pays Δχ² = +2416 to sit at Δ = 1,
+reproducing in this related family the community result that bare Barrow HDE cannot live at the volume
+endpoint [@Luciano:2025elo], whereas the gated family pays only Δχ² = +0.8 — the quantitative sense in
+which the structure gate is what makes a volume-law count observationally viable at all. Second, the
+gated family's profile interval is Δ = 0.93, 68% CL [0.83, 1.02], with all base parameters re-optimised
+at each Δ, and the pre-registered window lies inside it. Both are *profile* statements: Δ = 0 is
+disfavoured at Δχ² ≈ 371 along that profile, which overstates the marginalised model-level signal
+(ΔDIC ≈ −3) by roughly two orders of magnitude in χ² and must not be quoted as a posterior exclusion.
+The full marginalised posterior remains the DR3 + Euclid target, and the cosmology paper (§5.6)
+reserves the label "marginalised measurement" for it.
 
 ### 7.1 The count is state-dependent — and that resolves the "everything points to area" tension
 

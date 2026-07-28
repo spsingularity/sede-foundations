@@ -96,7 +96,7 @@ ${}^\star$ {\small \sf stilianpandev@gmail.com}
 \end{center}
 
 \begin{center}
-23 July 2026
+28 July 2026
 \end{center}
 
 \section*{Abstract}
@@ -136,18 +136,19 @@ postulate, it does not eliminate it. Its lasting value is to convert an
 untestable counting postulate into a falsifiable one: a pre-registered
 point prediction \(\Delta  = 1\), tested to a forecast
 \(\sigma (\Delta ) \approx  0.09\) by DESI DR3 + Euclid. On public data
-the contrast is already sharp --- in a \emph{profile}-likelihood
-analysis (the marginalised posterior awaits DR3+Euclid) the
-structure-gated family \emph{prefers} the volume endpoint
-\((\Delta  = 0.93\) {[}0.83, 1.02{]}) that the un-gated Barrow family
-pays \(\Delta \chi ^{2} \approx  2400\) to reach. The marginalised
-model-level statement is more modest: at equal parameter count the
-zero-parameter \(\Delta  = 1\) model is favoured over
-\(\Lambda \mathrm{CDM}\) at the cosmology paper's
-\(\Delta \mathrm{DIC} \approx  -3\) (a point-fit gives
-\(\Delta \chi ^{2} \approx  2.9\), but the DIC is the honest headline).
-The cosmological results of the cosmology paper stand independently of
-the reduction attempted here.
+the model-level statement is modest and is the one we lead with: at
+equal parameter count the zero-parameter \(\Delta  = 1\) model is
+favoured over \(\Lambda \mathrm{CDM}\) at the cosmology paper's
+\(\Delta \mathrm{DIC} \approx  -3\) --- a mild-to-moderate preference,
+not a detection. Underneath it, a \emph{profile}-likelihood diagnostic
+(the marginalised posterior awaits DR3 + Euclid) shows the
+structure-gated family sitting at the volume endpoint,
+\(\Delta  = 0.93\) {[}0.83, 1.02{]}, which the un-gated Barrow family
+pays \(\Delta \chi ^{2} \approx  2400\) to reach; profile statements of
+this kind overstate the marginalised signal by ∼two orders of magnitude
+in \(\chi ^{2}\) and are reported as diagnostics, not exclusions. The
+cosmological results of the cosmology paper stand independently of the
+reduction attempted here.
 }
 
 \vspace{6pt}
@@ -657,8 +658,34 @@ far above threshold), while local (area-law) connectivity is bounded.
 Gravity thus makes the well bistable --- but \emph{deeply} so today,
 which is why selection happens at the birth bifurcation (result iii,
 Fig. 4) rather than by barrier crossing (the horizon's membrane
-hydrodynamics, result iv, is a separate matter).}\label{fig:3}
+hydrodynamics, result iv, is a separate matter). \emph{The landscape
+variable here is the order parameter m of (ii) --- the fraction of
+horizon bonds on the bulk side of the min-cut --- and not the
+cosmological gate \(f_{\mathrm{sat}}\); the two are distinct coordinates
+and must not be read against each other (see the caution
+below).}}\label{fig:3}
 \end{figure}
+
+\textbf{The order parameter is not the gate.} Because panel \emph{(a)}
+is labelled by the bare gate, the landscape invites a reading in which
+\(f_{\mathrm{sat}}\) is the order parameter of the double well. It is
+not, and the distinction matters for what §\ref{sec-5} does and does not
+claim. The order parameter m is a \emph{free-energy} coordinate: it
+relaxes by gradient flow, \(\partial _\tau\) \(m = -\Gamma\) F′(m), a
+branch-\emph{selecting} dynamics fixed by the shape of F and driven by
+the pitchfork at the horizon's birth. The gate \(f_{\mathrm{sat}}\) is a
+\emph{cumulative} coordinate obeying activation kinetics
+\(\partial _{\mathrm{x}}\) \(f = \gamma (1 - f)\), whose rate vanishes
+as f → 1 --- a monotone filling that can never overshoot and that
+crosses no barrier. A variable whose own equation of motion switches off
+at the endpoint it approaches cannot be the order parameter of a
+bistable potential. The division of labour is therefore clean, and is
+what §\ref{sec-5} asserts: the \emph{branch} --- which well the horizon
+sits in --- is fixed once, at birth, by m (result iii);
+\(f_{\mathrm{sat}}\) is the subsequent \emph{occupancy} of the
+already-selected volume capacity, not a second branch selector. Nothing
+in the selection argument depends on the gate, and no critical behaviour
+in \(f_{\mathrm{sat}}\) is claimed (§\ref{sec-6}).
 
 \begin{enumerate}
 \def\labelenumi{(\roman{enumi})}
@@ -889,30 +916,38 @@ establishes, \(\Delta  = 0\) refutes, an intermediate value falsifies
 the locked-\(\Delta\) picture --- decisive, in hand; the predictions are
 frozen with an amendment protocol in the pre-registration).
 
-Level 3 already has a present-data instalment. On DESI DR2 BAO +
-Pantheon+ + CMB distance priors + cosmic chronometers \(+ f\sigma 8\),
-in one CAMB-in-the-loop pipeline, the un-gated Hubble-cutoff Barrow
-family pays \(\Delta \chi ^{2} = +2416\) to sit at \(\Delta  = 1\) ---
-reproducing, in this related family, the community result that bare
-Barrow HDE cannot live at the volume endpoint \cite{Luciano:2025elo}.
-The gated family, by contrast, pays only \(\Delta \chi ^{2} = +0.8\),
-with a profile-likelihood interval \(\Delta  = 0.93\), 68\% CL {[}0.83,
-1.02{]} (all base parameters re-optimised at each \(\Delta\) --- a
-profile, \emph{not} the full marginalised posterior, which remains the
-DR3 + Euclid target; the label is precise because the cosmology paper
-(§5.6) \cite{Pandev:2026cosmology} reserves ``marginalised
-measurement'' for that future). The pre-registered window lies inside
-the interval, and \(\Delta  = 0\) is excluded by
-\(\Delta \chi ^{2} \approx  371\) --- a \emph{profile} statement: read
-as such, it overstates the marginalised model-level signal (the
-cosmology paper's \(\Delta \mathrm{DIC} \approx  -3\)) by roughly two
-orders of magnitude in \(\chi ^{2}\), and must not be quoted as a
-posterior exclusion. SEDE at \(\Delta  = 1\), carrying zero dark-sector
-parameters, fits these data 2.9 \(\chi ^{2}\)-units \emph{better} than
-\(\Lambda \mathrm{CDM}\) at equal parameter count, and within 1.4
-AIC-units of w0waCDM, which spends two extra parameters. The structure
-gate is, quantitatively, what makes the volume-law count observationally
-viable --- on data already public.
+Level 3 already has a present-data instalment, and we state the
+model-level result first because it is the one that carries evidential
+weight. On DESI DR2 BAO + Pantheon+ + CMB distance priors + cosmic
+chronometers \(+ f\sigma 8\), in one CAMB-in-the-loop pipeline, SEDE at
+\(\Delta  = 1\) --- carrying \emph{zero} dark-sector parameters --- is
+favoured over \(\Lambda \mathrm{CDM}\) at
+\textbf{\(\Delta \mathrm{DIC} \approx  -3\)} (the cosmology paper's
+headline \cite{Pandev:2026cosmology}), fits 2.9 \(\chi ^{2}\)-units
+better at equal parameter count, and sits within 1.4 AIC-units of
+w0waCDM, which spends two extra parameters. That is a mild-to-moderate
+preference, not a detection, and it is the honest summary of what
+present data say about the model.
+
+Two \emph{diagnostic} profile-likelihood statements sit underneath it,
+and must not be read as posterior measurements. First, the un-gated
+Hubble-cutoff Barrow family pays \(\Delta \chi ^{2} = +2416\) to sit at
+\(\Delta  = 1\), reproducing in this related family the community result
+that bare Barrow HDE cannot live at the volume endpoint
+\cite{Luciano:2025elo}, whereas the gated family pays only
+\(\Delta \chi ^{2} = +0.8\) --- the quantitative sense in which the
+structure gate is what makes a volume-law count observationally viable
+at all. Second, the gated family's profile interval is
+\(\Delta  = 0.93\), 68\% CL {[}0.83, 1.02{]}, with all base parameters
+re-optimised at each \(\Delta\), and the pre-registered window lies
+inside it. Both are \emph{profile} statements: \(\Delta  = 0\) is
+disfavoured at \(\Delta \chi ^{2} \approx  371\) along that profile,
+which overstates the marginalised model-level signal
+\((\Delta \mathrm{DIC} \approx  -3)\) by roughly two orders of magnitude
+in \(\chi ^{2}\) and must not be quoted as a posterior exclusion. The
+full marginalised posterior remains the DR3 + Euclid target, and the
+cosmology paper (§5.6) reserves the label ``marginalised measurement''
+for it.
 
 \subsection{The count is state-dependent --- and that resolves the
 ``everything points to area'' tension}\label{sec-7-1}
