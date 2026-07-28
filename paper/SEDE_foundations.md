@@ -86,6 +86,8 @@ chain, and the precise localisation of what remains open.
 Throughout, every quantitative claim is a runnable experiment that the accompanying code runs with
 validation assertions.
 
+Figure 1 sets out the reduction in outline; the sections that follow take each tier in turn.
+
 ![Fig1](../results/foundations_fig1_reduction.png)
 
 **Figure 1.** The reduction in outline. The volume-law postulate splits into *state*, *form*,
@@ -129,6 +131,8 @@ epoch rather than tracking the horizon expansion; the w = −1 crossing is the
 GREA negative-pressure balance, structure-timed. SEDE is, in this sense, a *structure-gated* member of
 the GREA/entropic-dark-energy family — the gate being exactly what makes its w(z) lock to the growth
 history (the §5 phase-lock) rather than to the horizon's own size.
+
+Figure 2 collects the two consequences drawn from that literature.
 
 ![Fig5](../results/foundations_fig5_inferences.png)
 
@@ -387,6 +391,8 @@ fraction of horizon bonds on the bulk side of the min-cut — and the residual a
 to the tensor-network description of the horizon state itself: the S_ent = S_grav tier restated
 micro-structurally, one assumption where two stood before.
 
+Figure 3 shows the resulting two-phase landscape and the coupling that makes it bistable.
+
 ![Fig2](../results/criticality_soc.png)
 
 **Figure 3.** The two-phase horizon free energy. *(a)* Smooth crossover for the bare gate (J = 0);
@@ -443,6 +449,8 @@ The physical clock (≥ N^{3/2} relaxation times per e-fold of growth) sits on t
 slow/equilibrated side, but its O(1) normalisation at N ∼ 2 is genuinely Planck-era physics: the precise form of the selection claim is therefore a *probability* ≥ 0.9 rising to 1 in the
 equilibration limit, never a coin flip, and never area-biased — with the Δ measurement (§7)
 testing the outcome for the one horizon we have.
+
+Figure 4 shows the selection at the ordering bifurcation described above.
 
 ![FigBirth](../results/foundations_fig_birth.png)
 
