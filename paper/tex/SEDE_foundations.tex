@@ -1,10 +1,27 @@
-% Pandoc template for SciPost Physics (SciPost.cls). Engine: pdflatex (mathdesign).
-% SciPost.cls already loads geometry, inputenc(utf8), amsmath, hyperref, graphicx, cite,
-% caption, xcolor — so we add only the pandoc-body + prose-Unicode machinery on top.
-\documentclass[submission, Phys]{SciPost}
+% Pandoc template for Physical Review D (REVTeX 4.2, preprint/one-column).
+% Retargeted from SciPost: SciPost submission is preprint-server based and this
+% program has no arXiv identifier. Engine: pdflatex (REVTeX is pdflatex-native;
+% xelatex+STIX lacks the glyph REVTeX uses for the email footnote marker).
+\documentclass[aps,prd,preprint,nofootinbib,superscriptaddress]{revtex4-2}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else
+  \usepackage{fontspec}
+  \setmainfont{STIX Two Text}
+\fi
 
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage[hidelinks]{hyperref}
 \usepackage{orcidlink}
-\usepackage{amssymb}   % \Box, \square, \lesssim, \gtrsim … (SciPost.cls omits it; add explicitly)
+
+\makeatletter
+\let\pandocsurd\surd \renewcommand{\surd}{\ensuremath{\pandocsurd}}
+\makeatother
+\hyphenation{zenodo Zenodo}
+\providecommand{\eprint}[1]{#1}
+\AtBeginDocument{\renewcommand{\eprint}[1]{\href{https://arxiv.org/abs/#1}{#1}}}
 
 % --- prose Unicode operators -> math (pdflatex-safe via newunicodechar) ---
 \usepackage{newunicodechar}
@@ -77,39 +94,21 @@
 \makeatother
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \graphicspath{{../}{../figures/}{../../results/}{../../results/paper/}}
-\setlength{\emergencystretch}{3em}
 
-
-% --- make bibliography identifiers clickable -------------------------------
-% Several bibliography styles (SciPost, iopart-num) emit \eprint{...} as plain
-% text, leaving arXiv identifiers unclickable in the reference list. Redefine it
-% to a hyperlink. Works for both new (2004.09444) and old (gr-qc/9504004) ids.
-\providecommand{\eprint}[1]{#1}
-\AtBeginDocument{\renewcommand{\eprint}[1]{\href{https://arxiv.org/abs/#1}{#1}}}
+\setlength{\emergencystretch}{6em}
+\sloppy
 
 \begin{document}
 
-\begin{center}{\Large \textbf{Is the volume-law horizon a postulate or a
-consequence? A reduction to a driven non-equilibrium conjecture for
-Structural Entropy Dark Energy}}\end{center}
+\title{Is the volume-law horizon a postulate or a consequence? A
+reduction to a driven non-equilibrium conjecture for Structural Entropy
+Dark Energy}
 
-\begin{center}
-Stilian Pandev\textsuperscript{$\star$}\,\orcidlink{0009-0005-8153-071X}
-\end{center}
+\author{Stilian Pandev\,\orcidlink{0009-0005-8153-071X}}
+\email{stilianpandev@gmail.com}
+\affiliation{Independent researcher}
 
-\begin{center}
-{\bf 1} Independent researcher
-\\
-\vspace{2pt}
-${}^\star$ {\small \sf stilianpandev@gmail.com}
-\end{center}
-
-\begin{center}
-28 July 2026
-\end{center}
-
-\section*{Abstract}
-{\bf
+\begin{abstract}
 Structural Entropy Dark Energy (SEDE) reproduces the cosmological data
 with no fitted dark-sector parameter, at the price of one foundational
 input: the cosmic apparent horizon carries volume-law entropy (Barrow
@@ -166,19 +165,15 @@ this kind overstate the marginalised signal by ∼two orders of magnitude
 in \(\chi ^{2}\) and are reported as diagnostics, not exclusions. The
 cosmological results of the cosmology paper stand independently of the
 reduction attempted here.
-}
+\end{abstract}
 
-\vspace{6pt}
+\maketitle
+
 \noindent\textbf{Keywords:} horizon thermodynamics; generalised entropy;
 Barrow entropy; holographic dark energy; de Sitter holography;
 entanglement entropy; non-equilibrium statistical mechanics; entropic
 gravity; dark energy
-
-\vspace{10pt}
-\noindent\rule{\textwidth}{1pt}
-\tableofcontents\thispagestyle{fancy}
-\noindent\rule{\textwidth}{1pt}
-\vspace{10pt}
+\vspace{6pt}
 
 \section{Introduction}\label{sec-1}
 
@@ -1475,6 +1470,6 @@ full responsibility for its content. Artificial-intelligence tools
 manuscript, developing and cross-checking the analysis code, and
 literature searches; no AI tool is an author.
 
-\bibliographystyle{SciPost_bibstyle}
+\bibliographystyle{apsrev4-2}
 \bibliography{refs_foundations}
 \end{document}
