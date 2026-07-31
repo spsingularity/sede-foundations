@@ -824,7 +824,7 @@ Every quantitative claim in this paper is produced by the accompanying code wire
 entry point, each stage carrying validation assertions; the figures are regenerated from the same
 code. The model and its cosmology live with the companion cosmology paper [@Pandev:2026cosmology]; no additional observational data beyond
 the cosmology paper's standard public inputs is used here. A tagged release is archived at Zenodo, DOI
-[10.5281/zenodo.21525521](https://doi.org/10.5281/zenodo.21525521).
+[10.5281/zenodo.21525520](https://doi.org/10.5281/zenodo.21525520).
 
 ## Acknowledgements
 
