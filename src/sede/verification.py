@@ -349,7 +349,7 @@ def test_isw_perturbation(Omega_m=0.317, gamma=1.0):
 def test_S8(Omega_m=0.301, sigma8=0.789):
     """
     V18: SEDE-H S8 = sigma8 sqrt(Om/0.3) lands in the observed range — and is NOT
-    specifically eased (HONEST CORRECTION, sibling SEDE_V2 cross-check).
+    specifically eased (HONEST CORRECTION, V2 cross-check).
 
     When sigma8 is FIT to the fσ8 RSD data (not hand-set), SEDE-H lands at
     sigma8≈0.789, S8≈0.79 — essentially the SAME as ΛCDM (S8≈0.78); the RSD data
@@ -372,7 +372,7 @@ def test_eos_closure(Omega_m=0.317):
     V19: SEDE-H EOS-gap closure (Theorem 5D). The dynamical-horizon fluid EOS at
     z=0 equals the algebraic structural EOS, w_fluid(0)=w_alg=(4Ωm/3-1)/(1-Ωm),
     for ANY γ (the ε(0)=2Ωm flatness closure). |w_fluid-w_alg|<3e-3 across a γ
-    range. (Borrowed from the SEDE_V2 self-consistent Cai-Kim derivation.)
+    range. (From the V2 self-consistent Cai-Kim derivation.)
     """
     from .theory import w_DE_fluid_sedeH, w_DE_algebraic
     w_alg = w_DE_algebraic(Omega_m)
@@ -946,7 +946,7 @@ def test_syk_scrambling():
     """
     V60 (SYK horizon scrambler, run_syk_scrambling.py): the volume-law (Δ=1) postulate's
     bottom-up target — "a maximally-scrambled horizon has volume-law entanglement" — checked
-    in the canonical chaotic, black-hole-dual SYK model (upgrades the sibling S6 random-circuit
+    in the canonical chaotic, black-hole-dual SYK model (upgrades the V2 S6 random-circuit
     toy). Three respected diagnostics on N=10 Majorana SYK (mod 8 = 2 ⟹ GUE class):
       (1) gap ratio ⟨r⟩ → Wigner-Dyson (q=4 chaotic) vs lower (q=2 free/integrable);
       (2) mid-spectrum eigenstates saturate the Page volume-law value (q=4), sub-maximal (q=2);

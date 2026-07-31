@@ -1,10 +1,10 @@
-"""λ-family landscape diagnostic (borrowed from SEDE_V2's coupling_lambda axis).
+"""λ-family landscape diagnostic (from the V2 coupling_lambda axis of this work).
 
 Maps how the H^{2λ}-coupling exponent λ trades off the EOS-gap closure against
 intermediate-z dark energy / the CMB shift. λ=0 = additive (phantom, gap open);
 λ=1 = full conjugate identity (tracks H², CMB-tense); the dynamical-horizon
 SEDE-H (E_SEDE_H, λ_eff≈0.7) closes the gap (Theorem 5D) AND stays R-safe with
-the CORRECT growth — i.e. the SEDE_V2 'closure XOR CMB-safe' trade-off is not a
+the CORRECT growth — i.e. the V2 'closure XOR CMB-safe' trade-off is not a
 hard one once the growth factor is right.
 """
 from __future__ import annotations

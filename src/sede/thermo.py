@@ -1,11 +1,11 @@
 """Dimensional (SI) horizon thermodynamics — the quantitative conjugate identity.
 
-Borrowed/adapted from SEDE_V2's thermodynamics module, then combined with our
+Carried over from the V2 thermodynamics module of this work, then combined with our
 EOS-closure theorem (Theorem 5D) to a result neither repo had alone:
 
     f_sat(0) = Omega_DE / (1 - eps/2)        [conjugate identity, Theorem 1]
 
-With the ΛCDM deceleration eps(0)=1.5 Omega_m this gives 0.897 (SEDE_V2's "Test 1").
+With the ΛCDM deceleration eps(0)=1.5 Omega_m this gives 0.897 (V2 "Test 1").
 But the SEDE-H self-consistent Cai-Kim closure FORCES eps(0)=2 Omega_m (Theorem 5D),
 and then
 

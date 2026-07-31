@@ -235,7 +235,7 @@ def load_moresco():
 # ─── fσ8 RSD ─────────────────────────────────────────────────────────────────
 
 # Standard "Gold-2018" RSD compilation (Sagredo, Nesseris & Sapone 2018), the
-# vetted 16-point set also used by the SEDE_V2 sibling. REPLACES an earlier
+# vetted 16-point set also used in the V2 formulation of this work. REPLACES an earlier
 # 18-point array that carried erroneous over-tight entries — notably z=0.85 with
 # σ=0.035 (the real eBOSS-ELG error is ~0.095) and non-standard z=1.05 / z=2.33
 # points — which inflated the ABSOLUTE fσ8 χ² (~31 vs ~6) and added a spurious

@@ -1,6 +1,6 @@
 """Compressed-CMB distance priors for SEDE — shift R, acoustic scale l_A.
 
-Borrowed/adapted from the SEDE_V2 implementation (sede/cmb.py). A step beyond the
+Carried over from the V2 implementation of this work (sede/cmb.py). A step beyond the
 single shift parameter R used in likelihood.chi2_planck: it adds the acoustic
 scale l_A = pi D_M(z*)/r_s(z*), which pins D_M(z*)/r_s and is far more sensitive
 to intermediate-redshift dark energy than R alone.

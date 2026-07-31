@@ -282,11 +282,11 @@ Consequence — the γ_data-vs-theory "tension" dissolves:
   the data, by preferring γ_data≈1, are telling us the underlying weight is the
   extensive (entropy) one, exactly as a Bousso-bound argument requires.
 
-  Honest status (UPDATED after the SEDE_V2 sibling cross-check — the DATA do NOT
+  Honest status (UPDATED after the V2 cross-check — the DATA do NOT
   confirm p=1):
    (i) The literal p=1 running f_sat fits the joint data WORSE than the constant-
        gamma exponential-CDF f_sat: Delta chi2=+38 in our pipeline, and -3.97 vs
-       -4.64 in SEDE_V2 (the exact running over-produces intermediate-z DE).
+       -4.64 in V2 (the exact running over-produces intermediate-z DE).
    (ii) The WORKING model is the constant-gamma exponential CDF (Theorem 3) with
        gamma~1.50 = the Sheth-Tormen integral (the p=5/3 *calibration* value).
        gamma_data is METHOD-DEPENDENT: ~1.68 in a geometry-only fit (matches 1.50),
@@ -551,7 +551,7 @@ Significance:
   the (1-ε/2) horizon factor (λ=0). Restoring the dynamical horizon makes the
   number that drives H(z) coincide with the DESI-matching algebraic number, so for
   THIS background w₀ ≈ -0.85 is the genuine fluid EOS, not a separate z=0 construct.
-  (Borrowed/cross-checked against the SEDE_V2 self-consistent Cai-Kim derivation.)
+  (Cross-checked against the V2 self-consistent Cai-Kim derivation.)
 
   SCOPE (no-go, §W): this closure holds for the (1-ε/2) dynamical-horizon background
   E_SEDE_H, which carries the Cai-Kim temperature factor. By the no-go theorem (§W),
@@ -810,7 +810,7 @@ than extremising F, and it is SEDE's defining postulate (ρ_DE = T·s), not an e
 input. This is not yet a full quantum-gravity derivation of the fractal horizon, but it
 reduces Δ=1 from a fitted O(1) coupling to the GSL-equilibrium extremum of two
 independent principles. (Pillar 2's energy-bookkeeping/back-reaction form was
-sharpened in the parallel SEDE_V2 development track, which adopted Pillar 1 from this Theorem.)
+sharpened in the V2 formulation of this work, which adopted Pillar 1 from this Theorem.)
 
 VOLUME REFORMULATION (Δ-free — the PRIMARY statement of the model). Because Δ=1 means
 S ∝ A^{1+Δ/2} = A^{3/2} = R³ = V_AH, the deformation parameter can be ELIMINATED entirely:

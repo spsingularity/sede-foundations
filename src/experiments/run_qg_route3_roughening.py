@@ -2,7 +2,7 @@
 """
 QG postulate — ROUTE 3: the horizon as a roughening surface (Δ as a universality class).
 
-Merged from the parallel SEDE_V2 track's S1/KPZ work (theory/QG_POSTULATE_STRATEGIES.md,
+Merged from the V2 S1/KPZ work of this project (theory/QG_POSTULATE_STRATEGIES.md,
 run_kpz_roughening.py), reimplemented here and connected to our Routes 1 & 2.
 
 THE REFRAME (their contribution). Stop counting static microstates; ask "why does the cosmic horizon
@@ -83,7 +83,7 @@ def _run(label, N, nu, lam, D, dt, steps):
 
 if __name__ == "__main__":
     print("=" * 82)
-    print("QG ROUTE 3 — horizon roughening: Δ as a universality class (borrowed from SEDE_V2 S1/KPZ)")
+    print("QG ROUTE 3 — horizon roughening: Δ as a universality class (from V2 S1/KPZ)")
     print("=" * 82)
 
     # (1) the geometric reframe: Δ = 2/(d-1) -> Δ=1 is the d=3 space-filling endpoint

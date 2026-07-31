@@ -349,7 +349,7 @@ def build_table_running(Omega_m_grid, sigma8_grid, sigma_S, z_grid=None,
 def E_SEDE_lambda(z, Omega_m, gamma, lam, Omega_r=9.0e-5):
     """
     General H^{2λ}-coupling SEDE background (the λ-family diagnostic, borrowed
-    from SEDE_V2's `coupling_lambda`). The conjugate identity is parametrised as
+    from the V2 `coupling_lambda`). The conjugate identity is parametrised as
         ρ_DE = (3/8πG) (H²)^λ H0^{2(1-λ)} f_sat,
     i.e.  E²(z) = matter + Ω_DE0 · f_sat(z) · (E²)^λ,  solved by fixed-point
     iteration (the DE term is sub-dominant → contraction). Limits:
