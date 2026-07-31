@@ -4,7 +4,7 @@ volume-law (Δ=1) postulate.
 
 Context. SEDE's open postulate (Thm 10) is that the cosmic horizon is in a maximally
 *thermalised / scrambled* state, whose entanglement is therefore VOLUME-law (S ∝ V ∝
-A^{3/2} ⟹ Δ=1) rather than the ground-state AREA-law. The sibling team's S6 toy showed
+A^{3/2} ⟹ Δ=1) rather than the ground-state AREA-law. The parallel SEDE_V2 track's S6 toy showed
 the area→volume transition with a generic random-circuit drive (run_scrambling_toy.py).
 This module replaces that ad-hoc circuit with the **Sachdev–Ye–Kitaev model** — the
 canonical maximally-chaotic, *holographically dual* (near-extremal black hole) model

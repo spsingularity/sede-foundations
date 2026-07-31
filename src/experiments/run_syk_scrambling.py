@@ -2,7 +2,7 @@
 SYK scrambling experiment — a literature-grade version of the area→volume (Δ=0→Δ=1)
 demonstration SEDE's volume-law postulate (Thm 10) requires.
 
-Upgrades the sibling team's S6 random-circuit toy (run_scrambling_toy.py) to the
+Upgrades the parallel SEDE_V2 track's S6 random-circuit toy (run_scrambling_toy.py) to the
 Sachdev–Ye–Kitaev model: the canonical maximally-chaotic, holographically-dual
 (near-extremal black hole) model that saturates the MSS chaos bound λ_L ≤ 2πT. Runs
 three respected quantum-chaos diagnostics, each with an integrable q=2 control:

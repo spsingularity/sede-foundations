@@ -809,8 +809,8 @@ roughening thermalises — the same premise underlying all horizon thermodynamic
 than extremising F, and it is SEDE's defining postulate (ρ_DE = T·s), not an extra
 input. This is not yet a full quantum-gravity derivation of the fractal horizon, but it
 reduces Δ=1 from a fitted O(1) coupling to the GSL-equilibrium extremum of two
-independent principles. (Cross-team: Pillar 2's energy-bookkeeping/back-reaction form was
-sharpened jointly with the sibling SEDE_V2 team, who adopted Pillar 1 from this Theorem.)
+independent principles. (Pillar 2's energy-bookkeeping/back-reaction form was
+sharpened in the parallel SEDE_V2 development track, which adopted Pillar 1 from this Theorem.)
 
 VOLUME REFORMULATION (Δ-free — the PRIMARY statement of the model). Because Δ=1 means
 S ∝ A^{1+Δ/2} = A^{3/2} = R³ = V_AH, the deformation parameter can be ELIMINATED entirely:

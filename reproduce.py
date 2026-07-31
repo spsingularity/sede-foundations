@@ -176,7 +176,7 @@ def stage_cmd(name, args):
     if name == "pert":
         return [PY, "src/experiments/run_class_perturbations.py"] # W9: full CLASS perturbations (validates smooth-DE)
     if name == "v2x":
-        return [PY, "src/experiments/run_xval_v2checks.py"]       # cross-team: reproduce SEDE_V2 binding/GSL + w0 split
+        return [PY, "src/experiments/run_xval_v2checks.py"]       # cross-track: reproduce SEDE_V2 binding/GSL + w0 split
     if name == "qg1":
         return [PY, "src/experiments/run_qg_route1_ckn.py"]       # QG postulate route 1: CKN fixes scale not form (reduction)
     if name == "qg2":

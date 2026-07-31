@@ -2,7 +2,7 @@
 """
 QG postulate — ROUTE 3: the horizon as a roughening surface (Δ as a universality class).
 
-Borrowed + merged from the sibling SEDE_V2 team's S1/KPZ work (theory/QG_POSTULATE_STRATEGIES.md,
+Merged from the parallel SEDE_V2 track's S1/KPZ work (theory/QG_POSTULATE_STRATEGIES.md,
 run_kpz_roughening.py), reimplemented here and connected to our Routes 1 & 2.
 
 THE REFRAME (their contribution). Stop counting static microstates; ask "why does the cosmic horizon
@@ -44,7 +44,7 @@ Run:  python run_qg_route3_roughening.py
 import numpy as np
 
 RNG = np.random.default_rng(3)
-DELTA_DATA, DELTA_ERR = 0.93, 0.09          # cross-team Barrow Δ (MCMC); our forecast σ(Δ)≈0.09 consistent
+DELTA_DATA, DELTA_ERR = 0.93, 0.09          # Barrow Δ (MCMC); forecast σ(Δ)≈0.09 consistent
 
 
 def _lap(h):
